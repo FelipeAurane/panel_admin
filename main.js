@@ -22,13 +22,8 @@ function createWindow() {
   mainWindow.maximize();
   mainWindow.setMenuBarVisibility(false);
 
-  const indexPath = path.join(__dirname, 'src', 'pages', 'login', 'index.html');
-  mainWindow.loadFile(indexPath);
-
-  ipcMain.on('login-successful', () => {
-    const homePath = path.join(__dirname, 'src', 'pages', 'home', 'home.html');
-    mainWindow.loadFile(homePath);
-  });
+  const homePath = path.join(__dirname, 'src', 'pages', 'home', 'home.html');
+  mainWindow.loadFile(homePath);
 
 
   
