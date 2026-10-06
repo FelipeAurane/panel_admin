@@ -1,5 +1,6 @@
 // Importe a biblioteca do Stripe
-const stripe = require('stripe')('sk_test_51NSzPKIaiJnLhESS2nfGsVavhWNEVIwFmaOGjrX5sMnpGG5XcjvCXVODDIJCQKIfAsRc97h4yT1RC4MhNHNVKms900YHuo7VYe');
+// Chave definida via variável de ambiente para segurança
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY || '');
 
 // Crie uma nova conta de cliente
 const createCustomer = async (nome, email) => {
