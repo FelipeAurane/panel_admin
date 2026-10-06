@@ -1,0 +1,96 @@
+/* CSS para a tabela com cards */
+#crud {
+  width: 100%;
+  white-space: nowrap;
+}
+
+#crud thead {
+  background-color: #f7fafc;
+  border-bottom: 1px solid #d2d6dc;
+}
+
+#crud tbody {
+  background-color: #ffffff;
+}
+
+#crud tr {
+  border-bottom: 1px solid #d2d6dc;
+}
+
+#crud td {
+  padding: 10px;
+}
+
+#crud .flex {
+  display: flex;
+  align-items: center;
+}
+
+#crud .w-8 {
+  width: 8px;
+}
+
+#crud .h-8 {
+  height: 8px;
+}
+
+#crud .mr-3 {
+  margin-right: 3px;
+}
+
+#crud .rounded-full {
+  border-radius: 50%;
+}
+
+#crud .object-cover {
+  object-fit: cover;
+}
+
+#crud .font-semibold {
+  font-weight: 600;
+}
+
+#crud .text-xs {
+  font-size: 10px;
+}
+
+#crud .text-gray-600 {
+  color: #666666;
+}
+
+#crud .dark:text-gray-400 {
+  color: #999999;
+}
+
+#crud .text-status-pendente,
+#crud .text-status-aprovado,
+#crud .text-status-cancelado,
+#crud .text-status-expirado {
+  color: #ffffff;
+  height: 25px;
+  align-items: center;
+  align-content: center;
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+#crud .text-status-pendente {
+  background-color: #f59e0b;
+}
+
+#crud .text-status-aprovado {
+  background-color: #10b981;
+}
+
+#crud .text-status-cancelado {
+  background-color: #ef4444;
+}
+
+#crud .text-status-expirado {
+  background-color: #9ca3af;
+}

@@ -1,0 +1,68 @@
+.date-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .date-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-day {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .date-month {
+    margin: 10px;
+    font-size: 14px;
+  }
+  
+  .date-year {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .edit-button,
+  .delete-button {
+    margin-left: 10px;
+    padding: 5px 5px;
+    font-size: 14px;
+    border: none;
+  }
+  
+  .edit-button {
+  
+    color: #fff;
+    border-radius: 50px;
+  }
+  
+  .delete-button {
+
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+  }
+  
+  .menudelet{
+    display: flex;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bx-chevrons-left,.bx-chevrons-right{
+    margin:15px
+  }
+
+ 

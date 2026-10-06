@@ -1,0 +1,81 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema Divinopolis</title>
+    <!-- ====== CSS ====== -->
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="../home/scroll.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="/preloader.js"></script>
+  <script src="login.js"></script>
+</head>
+<body>
+
+
+  <div class="background"></div>
+ <!-- Tela de login -->
+ <div class="login-card"></div>
+ 
+  <div class="form-box">
+    <div class="form-value">
+        <form action="" id="loginForm">
+          <form action="">
+            <svg id="Camada_3" data-name="Camada 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.85 340.47"
+            style="width: 105px; height: 95px; margin-right: 16px;">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #ffc60b;
+                }
+              </style>
+            </defs>
+            <polygon class="cls-1"
+              points="158.98 263.55 158.38 263.55 158.52 263.29 44.15 262.88 0 338.23 116.87 338.83 158.98 263.55" />
+            <path class="cls-1"
+              d="M458.38,112l-239.13-3.13L120,278.34H234l48.08-83,146.12,2.24c47.34,1.57,106.49,36.21,106.67,85.05h0c.19,49.43-45.72,89.63-102.54,89.77H304.37l-41.08,75.93,193.28,1c94.93-.26,171.65-76.05,171.34-169.25h0C627.59,188.05,552.15,113.24,458.38,112Z"
+              transform="translate(-21.05 -108.88)" />
+          </svg>
+          </form>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" name="email" id="email" onchange="onChangeEmail()" required>
+                <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" name="password" id="password" onchange="onChangePassword()" required>
+                <label for="">Senha</label>
+            </div>
+            <div>
+                <button type="button" class="solid" id="login-button" onclick="login()">Entrar</button>
+            </div>
+        </form>
+    </div>
+  </div>
+<div id="splash" class="splash-container">
+  <div class="progress-bar">
+    <svg id="Camada_3" data-name="Camada 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.85 340.47"
+    style="width: 305px; height: 295px; margin-right: 16px;">
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #ffc60b;
+        }
+      </style>
+    </defs>
+    <polygon class="cls-1"
+      points="158.98 263.55 158.38 263.55 158.52 263.29 44.15 262.88 0 338.23 116.87 338.83 158.98 263.55" />
+    <path class="cls-1"
+      d="M458.38,112l-239.13-3.13L120,278.34H234l48.08-83,146.12,2.24c47.34,1.57,106.49,36.21,106.67,85.05h0c.19,49.43-45.72,89.63-102.54,89.77H304.37l-41.08,75.93,193.28,1c94.93-.26,171.65-76.05,171.34-169.25h0C627.59,188.05,552.15,113.24,458.38,112Z"
+      transform="translate(-21.05 -108.88)" />
+  </svg>
+  </div>
+</div>
+
+</body>
+</html>

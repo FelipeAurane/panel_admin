@@ -1,0 +1,345 @@
+.feed {
+  max-width: 600px;
+  margin: 0 auto;
+  top:0px;
+  padding: 0px;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: end;
+
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  display: none;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.textarea-container{
+  height: 250px;
+  width: 180%;
+  background: #11101d;
+  position: relative;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid #9b9a9a60;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+#postText {
+  border: none;
+  position: absolute;
+  height: 90%;
+  width: 96%;
+  margin-right:10px;
+  margin-left:16px;
+  background: #210fec00;
+  color: white;
+  resize: none; /* Desativa o redimensionamento do textarea */
+  outline: none; /* Remove a borda quando o textarea estiver selecionado */
+}
+
+
+.post-button,
+.add-image-button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+  
+}
+
+
+.add-image-button {
+  background-color: #2a375091;
+  margin-right: 10px;
+  z-index: 999; /* Define um valor alto para a sobreposição */
+}
+
+.post-button {
+  background-color: #3678f4;
+  margin-right: 10px;
+  z-index: 999; /* Define um valor alto para a sobreposição */
+}
+
+.thumbnail-container {
+  position: absolute;
+  bottom: 30px; /* Ajuste a posição vertical conforme necessário */
+  left: 30px; /* Ajuste a posição horizontal conforme necessário */
+}
+
+.post-text {
+  max-height: 4em; /* Define a altura máxima do conteúdo do post para 4 linhas */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa a altura máxima */
+  position: relative;
+}
+
+.show-more-button,
+.show-less-button {
+  display: none; /* Inicialmente oculta os botões "Exibir Mais" e "Exibir Menos" */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.show-less-button {
+  display: none; /* O botão "Exibir Menos" é exibido apenas quando o texto está expandido */
+}
+
+
+.thumbnail {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #9b9a9a60;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button i {
+  font-size: 18px;
+}
+
+
+
+
+button.post-button i,
+button.add-image-button i {
+  color: #fff;
+}
+
+.post {
+  position: absolute;
+  background: #11101d;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid #9b9a9a60;
+  padding: 10px;
+}
+
+.post {
+  position: relative;
+  padding: 20px;
+  display: flex;
+}
+
+.post img {
+  max-width: 100%;
+}
+
+.name {
+  position: absolute;
+  margin-top: 8px !important;
+  color: white;
+  font-weight: bold;
+  
+}
+
+.post .author-image {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.post .post-time {
+  position: absolute;
+  color: #777777;
+  top: 20px;
+  right: 20px;
+  font-size: 0.8rem;
+}
+
+.post .post-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.post .name {
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.buttons-container {
+  margin-top: 10px; /* Adiciona espaço entre os botões e o conteúdo anterior */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.arq-button {
+  background-color: #3bb33b;
+  margin-right: 8px;
+  margin-top: 10px;
+  width: 120px;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  font-size: 12px;
+}
+
+.arq-button i {
+  margin-right: 5px; /* Margem entre o ícone e o texto */
+}
+
+.deletar-button {
+  background-color: #f44336;
+  margin-top: 10px;
+  width: 100px;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 10px;
+  border: none;
+  margin-right: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  font-size: 12px;
+}
+
+.deletar-button i {
+  margin-right: 5px; /* Margem entre o ícone e o texto */
+}
+
+.edit-button {
+  background-color: #3678f4;
+  margin-right: 8px;
+  margin-top: 10px;
+  width: 100px;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  font-size: 12px;
+}
+
+.edit-button i {
+  margin-right: 5px; /* Margem entre o ícone e o texto */
+}
+
+#p {
+  max-height: 8em; /* Defina a altura máxima para 8 linhas ou a altura desejada */
+  overflow-y: auto; /* Adiciona a barra de rolagem vertical quando o conteúdo excede a altura máxima */
+  position: relative;
+  padding: 5px 10px; /* Adicione um espaçamento interno para que o conteúdo não fique muito próximo à borda */
+  margin-top: 60px;
+  margin-bottom: 10px;
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(180deg, rgb(31, 31, 39), transparent 20%, transparent 70%,); /* Gradiente azul, transparente e vermelho */
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 5vh;
+  background-color: #33333300;
+}
+
+.menu-horizontal {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  display: flex;
+}
+
+.menu-horizontal li {
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.menu-horizontal li.selected {
+  color: #fff;
+  opacity: 1;
+}
+
+/* Linha abaixo do nome selecionado */
+.menu-horizontal li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: grey; /* Cor da linha é cinza */
+  transition: width 0.3s;
+}
+
+.menu-horizontal li.selected::after {
+  width: 100%;
+}

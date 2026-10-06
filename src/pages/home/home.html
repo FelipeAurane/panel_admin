@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- ====== Fontawesome CDN Link ====== -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+
+  <!-- ====== CSS ====== -->
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="scroll.css">
+  <link rel="stylesheet" href="navigate.css">
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="homeview.css">
+  <link rel="stylesheet" href="agendamentos.css">
+  <link rel="stylesheet" href="./css/cash.css">
+  <link rel="stylesheet" href="./css/style-new-aluno.css">
+  <link rel="stylesheet" href="tailwind.output.css">
+
+</head>
+
+<body>
+
+  <div class="sidebar close">
+
+    <!-- Icon Main -->
+    <div class="logo-details">
+      <i class='icon'>
+        <svg id="Camada_3" data-name="Camada 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.85 340.47"
+          style="width: 55px; height: 45px; margin-left: 10px;">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #ffc60b;
+              }
+            </style>
+          </defs>
+          <polygon class="cls-1"
+            points="158.98 263.55 158.38 263.55 158.52 263.29 44.15 262.88 0 338.23 116.87 338.83 158.98 263.55" />
+          <path class="cls-1"
+            d="M458.38,112l-239.13-3.13L120,278.34H234l48.08-83,146.12,2.24c47.34,1.57,106.49,36.21,106.67,85.05h0c.19,49.43-45.72,89.63-102.54,89.77H304.37l-41.08,75.93,193.28,1c94.93-.26,171.65-76.05,171.34-169.25h0C627.59,188.05,552.15,113.24,458.38,112Z"
+            transform="translate(-21.05 -108.88)" />
+        </svg>
+      </i>
+      <span class="logo_name">Avelã</span>
+    </div>
+
+    <!-- Menu Lateral -->
+    <ul class="nav-links">
+      <li><a href="#" data-screen="inicio">
+          <i class='bx bxs-grid-alt'></i>
+          <span class="link_name">Inicio</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Inicio</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" data-screen="simulador">
+          <i class='bx bxs-carousel'></i>
+          <span class="link_name">Insights</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Insights</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-screen="turmas">
+          <i class='bx bxs-group'></i>
+          <span class="link_name">Clientes</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Clientes</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-screen="pagamentos">
+          <i class='bx bxs-wallet'></i>
+          <span class="link_name">Financeiro</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Financeiro</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" data-screen="agendamento">
+          <i class='bx bxs-calendar'></i>
+          <span class="link_name">Agendamento</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Agendamento</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" data-screen="alunos">
+          <i class='bx bxs-message-square-add'></i>
+          <span class="link_name">Seleção de fotos</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Seleção de fotos</a></li>
+        </ul>
+      </li>
+
+
+
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-layer'></i>
+            <span class="link_name">Meu Site</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Site</a></li>
+          <li><a href="#" data-screen="geral">Geral</a></li>
+          <li><a href="#" data-screen="modular">Modular</a></li>
+
+        </ul>
+      </li>
+
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-cog'></i>
+            <span class="link_name">Ajustes</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Ajustes</a></li>
+          <li><a href="#">Geral</a></li>
+          <li><a href="#">Suporte</a></li>
+        </ul>
+      </li>
+
+      <div class="profile-details">
+        <div class="profile-content">
+          <img id="image" src="./profile.jpg" alt="profileImg">
+          <div id="onlineIndicator"></div>
+        </div>
+        <div class="name-job">
+          <div id="name" class="profile_name"></div>
+          <div id="job" class="job"></div>
+        </div>
+
+      </div>
+      </li>
+    </ul>
+
+  </div>
+
+  <!-- Todas as Telas -->
+  <section class="home-section rounded-overlay">
+
+    <!-- Notifications -->
+    <ul class="notifications"></ul>
+
+    <!-- Menu Top Bar -->
+    <div class="menutopbar">
+      <div class="home-content">
+
+        <div class="menu-btn">
+          <i class="menu-btn__burger"></i>
+
+        </div>
+        <!-- Seu HTML -->
+        <div class="search-container">
+
+
+          <input type="text" id="searchInput" class="search-input" placeholder="Buscar informações do aluno.">
+
+          <i class="fas fa-search search-icon"></i>
+
+          <div id="suggestionsContainer">
+            <p class="result">Resultado da busca.</p>
+            <ul id="suggestionsList"></ul>
+          </div>
+        </div>
+
+        <div class="icons">
+          <i class='bx bxs-bell'></i>
+          <i class='bx bxs-collection' onclick="menuToggle();"></i>
+        </div>
+
+
+        <div class="menu-content">
+
+
+          <ul>
+            <li><i class='bx bx-user'></i>
+              <span class="link_name">Meu Perfil</span>
+            </li>
+
+            <li><i class='bx bx-file'></i>
+              <span class="link_name">Lembretes</span>
+            </li>
+
+            <li id="fechar_button">
+              <i class="bx bx-notification-off"></i>
+              <span class="off" id="fecharButton">Desligar</span>
+            </li>
+
+
+
+            <li id="log_out_button">
+              <i class="bx bx-log-out"></i>
+              <span class="log_out">Sair</span>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Splash Loader  -->
+    <div id="preloader">
+      <p id="preloader-message">Aguarde...</p>
+      <p id="preloader-progress">Conectando ao servidor...</p>
+      <div id="preloader-spinner"></div>
+    </div>
+
+    <div class="home-div" id="home-div">
+
+
+      <!-- Inicio  -->
+      <div class="home-div-inicio">
+
+        <h1>Dashboard Principal</h1>
+        <p>Bem-vindo ao seu painel de controle. Aqui você pode visualizar todas as métricas importantes do seu projeto.
+        </p>
+        <div class="section">
+          <h2><ion-icon name="stats-chart-outline"></ion-icon> Visão Geral</h2>
+          <div class="cards-grid">
+            <div class="card">
+              <h3>Total de Categorias</h3>
+              <div class="metric" id="total-categories">0</div>
+            </div>
+            <div class="card">
+              <h3>Total de Imagens</h3>
+              <div class="metric" id="total-images">0</div>
+            </div>
+            <div class="card">
+              <h3>Uso do Storage</h3>
+              <div class="metric" id="storage-usage">0 MB</div>
+            </div>
+            <div class="card">
+              <h3>Versão dos Dados</h3>
+              <div class="metric" id="data-version">1</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Insights  -->
+      <div class="home-div-simulador">
+
+
+        <main class="h-full pb-16 overflow-y-auto">
+          <div>
+            <h2 class="my-6 text-2xl font-semibold">
+              Insights Avançados
+            </h2>
+            <!-- CTA -->
+            <a class="flex items-center justify-between p-4 mb-8 text-sm font-semibold card-mini rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+              href="#">
+              <div class="flex items-center">
+                <svg id="Camada_3" data-name="Camada 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.85 340.47"
+                  style="width: 25px; height: 15px; margin-right: 16px;">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #ffc60b;
+                      }
+                    </style>
+                  </defs>
+                  <polygon class="cls-1"
+                    points="158.98 263.55 158.38 263.55 158.52 263.29 44.15 262.88 0 338.23 116.87 338.83 158.98 263.55" />
+                  <path class="cls-1"
+                    d="M458.38,112l-239.13-3.13L120,278.34H234l48.08-83,146.12,2.24c47.34,1.57,106.49,36.21,106.67,85.05h0c.19,49.43-45.72,89.63-102.54,89.77H304.37l-41.08,75.93,193.28,1c94.93-.26,171.65-76.05,171.34-169.25h0C627.59,188.05,552.15,113.24,458.38,112Z"
+                    transform="translate(-21.05 -108.88)" />
+                </svg>
+                <span>Aqui sera possivel gerenciar insights avançados sobre tudo!</span>
+              </div>
+
+            </a>
+
+
+
+          </div>
+        </main>
+
+      </div>
+
+      <!-- Clientes -->
+      <div class="home-div-turmas">
+
+        <main class="h-full pb-16 overflow-y-auto">
+          <div>
+            <h2 class="my-6 text-2xl font-semibold">
+              Gerenciador de clientes
+            </h2>
+            <!-- CTA -->
+            <a class="flex items-center justify-between p-4 mb-8 text-sm font-semibold card-mini rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+              href="#">
+              <div class="flex items-center">
+                <svg id="Camada_3" data-name="Camada 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.85 340.47"
+                  style="width: 25px; height: 15px; margin-right: 16px;">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #ffc60b;
+                      }
+                    </style>
+                  </defs>
+                  <polygon class="cls-1"
+                    points="158.98 263.55 158.38 263.55 158.52 263.29 44.15 262.88 0 338.23 116.87 338.83 158.98 263.55" />
+                  <path class="cls-1"
+                    d="M458.38,112l-239.13-3.13L120,278.34H234l48.08-83,146.12,2.24c47.34,1.57,106.49,36.21,106.67,85.05h0c.19,49.43-45.72,89.63-102.54,89.77H304.37l-41.08,75.93,193.28,1c94.93-.26,171.65-76.05,171.34-169.25h0C627.59,188.05,552.15,113.24,458.38,112Z"
+                    transform="translate(-21.05 -108.88)" />
+                </svg>
+                <span>Aqui sera possivel adicionar e gerenciar todos os clientes!</span>
+              </div>
+
+            </a>
+
+            <div class="btns">
+
+              <div class="div-lixeira " onclick="openModalNovaTurma()">
+                <i class="bx bxs-user" style="color: #ffffff; width: 35px; height: 35px;"></i>
+                <span class="textBtn">Adicionar</span>
+              </div>
+
+            </div>
+
+
+
+
+            <!-- Tela de criação de turma -->
+            <div>
+              <div id="modalNovaTurma"
+                style="display: none; position: absolute; z-index: 9999; top: 0; left: 0; right: 0; bottom: 0;">
+                <!-- Modal Novo Aluno -->
+                <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
+                  x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                  x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                  x-transition:leave-end="opacity-0"
+                  class="fixed inset-0 z-30 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center">
+                  <!-- Modal -->
+                  <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
+                    x-transition:enter-start="opacity-0 transform translate-y-1/2" x-transition:enter-end="opacity-100"
+                    x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                    x-transition:leave-end="opacity-0  transform translate-y-1/2" @click.away="closeModal"
+                    @keydown.escape="closeModal" class="card-mini-form" role="dialog" id="modal1">
+                    <!-- Remove header if you don't want a close icon. Use modal body to place modal tile. -->
+                    <header class="flex justify-end">
+                      <button
+                        class="inline-flex items-center justify-center w-6 h-6 text-gray-400 transition-colors duration-150 rounded dark:hover:text-gray-200 hover: hover:text-gray-700"
+                        aria-label="close" onclick="closeModal()">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" role="img" aria-hidden="true">
+                          <path
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd" fill-rule="evenodd"></path>
+                        </svg>
+                      </button>
+                    </header>
+                    <div style="max-height: 100%; overflow-y: auto;">
+                      <form action="#" class="form">
+                        <!-- Modal body -->
+                        <div class="mt-4 mb-6">
+                          <!-- Modal title -->
+                          <p class="card-mini mb-2 text-lg font-semibold text-gray-700 dark:text-gray-300">
+                            Criar uma nova turma
+                          </p>
+                          <!-- Modal description -->
+                          <p class="card-mini text-sm text-gray-700 dark:text-gray-400">
+                            Certifique-se de que os dados da turma estão corretos, e o painel de gestão das turmas
+                            estaram disponível para verificação do processo da turma!
+                          </p>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of modal backdrop -->
+              </div>
+            </div>
+
+
+          </div>
+
+          <div id="modal" class="modal">
+            <div id="modal-content" class="modal-content">
+              <!-- Conteúdo da tela flutuante -->
+            </div>
+          </div>
+
+
+
+          <div>
+            <div style="display: none;" id="modalNovoAlunoInfo"
+              style="position: absolute; z-index: 9999; top: 0; left: 0; right: 0; bottom: 0;">
+              <!-- Modal Novo Aluno -->
+              <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
+                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                class="fixed inset-0 z-30 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center">
+                <!-- Modal -->
+                <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
+                  x-transition:enter-start="opacity-0 transform translate-y-1/2" x-transition:enter-end="opacity-100"
+                  x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                  x-transition:leave-end="opacity-0  transform translate-y-1/2" @click.away="closeModal"
+                  @keydown.escape="closeModal" class="card-mini-form" role="dialog" id="modal1">
+                  <!-- Remove header if you don't want a close icon. Use modal body to place modal tile. -->
+                  <header class="flex justify-end">
+                    <button
+                      class="inline-flex items-center justify-center w-6 h-6 text-gray-400 transition-colors duration-150 rounded dark:hover:text-gray-200 hover: hover:text-gray-700"
+                      aria-label="close" onclick="closeModal()">
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" role="img" aria-hidden="true">
+                        <path
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd" fill-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </header>
+                  <div style="max-height: 100%; overflow-y: auto;">
+                    <form action="#" class="form">
+
+                      <ul id="informacoesAluno"></ul>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- End of modal backdrop -->
+            </div>
+          </div>
+
+
+
+        </main>
+
+
+      </div>
+
+      <!-- Pagamentos -->
+      <div class="home-div-pagamentos">
+
+        <main class="h-full pb-16 overflow-y-auto">
+          <div>
+            <h2 class="my-6 text-2xl font-semibold">
+              Gerenciar todos os pagamentos
+            </h2>
+            <!-- CTA -->
+            <a class="flex items-center justify-between p-4 mb-8 text-sm font-semibold card-mini rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+              href="#">
+              <div class="flex items-center">
+                <svg id="Camada_3" data-name="Camada 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.85 340.47"
+                  style="width: 25px; height: 15px; margin-right: 16px;">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #ffc60b;
+                      }
+                    </style>
+                  </defs>
+                  <polygon class="cls-1"
+                    points="158.98 263.55 158.38 263.55 158.52 263.29 44.15 262.88 0 338.23 116.87 338.83 158.98 263.55" />
+                  <path class="cls-1"
+                    d="M458.38,112l-239.13-3.13L120,278.34H234l48.08-83,146.12,2.24c47.34,1.57,106.49,36.21,106.67,85.05h0c.19,49.43-45.72,89.63-102.54,89.77H304.37l-41.08,75.93,193.28,1c94.93-.26,171.65-76.05,171.34-169.25h0C627.59,188.05,552.15,113.24,458.38,112Z"
+                    transform="translate(-21.05 -108.88)" />
+                </svg>
+                <span>Aqui sera possivel gerenciar o financeiro!</span>
+              </div>
+
+            </a>
+
+
+
+          </div>
+
+          <div id="modal" class="modal">
+            <div id="modal-content" class="modal-content">
+              <!-- Conteúdo da tela flutuante -->
+            </div>
+          </div>
+
+
+
+          <div>
+            <div style="display: none;" id="modalNovoAlunoInfo"
+              style="position: absolute; z-index: 9999; top: 0; left: 0; right: 0; bottom: 0;">
+              <!-- Modal Novo Aluno -->
+              <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
+                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                class="fixed inset-0 z-30 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center">
+                <!-- Modal -->
+                <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
+                  x-transition:enter-start="opacity-0 transform translate-y-1/2" x-transition:enter-end="opacity-100"
+                  x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                  x-transition:leave-end="opacity-0  transform translate-y-1/2" @click.away="closeModal"
+                  @keydown.escape="closeModal" class="card-mini-form" role="dialog" id="modal1">
+                  <!-- Remove header if you don't want a close icon. Use modal body to place modal tile. -->
+                  <header class="flex justify-end">
+                    <button
+                      class="inline-flex items-center justify-center w-6 h-6 text-gray-400 transition-colors duration-150 rounded dark:hover:text-gray-200 hover: hover:text-gray-700"
+                      aria-label="close" onclick="closeModal()">
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" role="img" aria-hidden="true">
+                        <path
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd" fill-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </header>
+                  <div style="max-height: 100%; overflow-y: auto;">
+                    <form action="#" class="form">
+
+                      <ul id="informacoesAluno"></ul>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- End of modal backdrop -->
+            </div>
+          </div>
+
+
+
+        </main>
+
+
+      </div>
+
+      <!-- Agendamento -->
+      <div class="home-div-agendamento">
+
+
+
+        <main class="h-full pb-16 overflow-y-auto">
+          <div>
+            <h2 class="my-6 text-2xl font-semibold">
+              Criar novas datas de agendamento
+            </h2>
+            <!-- CTA -->
+            <a class="flex items-center justify-between p-4 mb-8 text-sm font-semibold card-mini rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+              href="#">
+              <div class="flex items-center">
+                <svg id="Camada_3" data-name="Camada 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.85 340.47"
+                  style="width: 25px; height: 15px; margin-right: 16px;">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #ffc60b;
+                      }
+                    </style>
+                  </defs>
+                  <polygon class="cls-1"
+                    points="158.98 263.55 158.38 263.55 158.52 263.29 44.15 262.88 0 338.23 116.87 338.83 158.98 263.55" />
+                  <path class="cls-1"
+                    d="M458.38,112l-239.13-3.13L120,278.34H234l48.08-83,146.12,2.24c47.34,1.57,106.49,36.21,106.67,85.05h0c.19,49.43-45.72,89.63-102.54,89.77H304.37l-41.08,75.93,193.28,1c94.93-.26,171.65-76.05,171.34-169.25h0C627.59,188.05,552.15,113.24,458.38,112Z"
+                    transform="translate(-21.05 -108.88)" />
+                </svg>
+                <span>Todas datas disponiveis para agendamento devem ser adicionadas aqui!</span>
+              </div>
+
+            </a>
+
+            <div class="btns">
+
+              <div class="div-lixeira " onclick="openModalData()">
+                <i class="bx bxs-calendar-plus" style="color: #ffffff; width: 35px; height: 35px;"></i>
+                <span class="textBtn">Adicionar</span>
+              </div>
+
+
+              <div class="div-lixeira " onclick="openModalDelet()">
+                <i class="bx bxs-trash" style="color: #ffffff; width: 35px; height: 35px;"></i>
+                <span class="textBtn" style="margin-left: 22px;">Excluir</span>
+              </div>
+
+
+            </div>
+            <div id="modaldata" style="display: none;">
+
+              <!-- Modal Novo Aluno -->
+              <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
+                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                class="fixed inset-0 z-30 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center">
+                <!-- Modal -->
+                <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
+                  x-transition:enter-start="opacity-0 transform translate-y-1/2" x-transition:enter-end="opacity-100"
+                  x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                  x-transition:leave-end="opacity-0  transform translate-y-1/2" @click.away="closeModal"
+                  @keydown.escape="closeModal"
+                  class="card-mini w-full px-6 py-4 overflow-hidden bg-white rounded-t-lg dark:bg-gray-800 sm:rounded-lg sm:m-4 sm:max-w-xl"
+                  role="dialog" id="modal1">
+                  <!-- Remove header if you don't want a close icon. Use modal body to place modal tile. -->
+                  <header class="flex justify-end">
+                    <button
+                      class="inline-flex items-center justify-center w-6 h-6 text-gray-400 transition-colors duration-150 rounded dark:hover:text-gray-200 hover: hover:text-gray-700"
+                      aria-label="close" onclick="closeModal()">
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" role="img" aria-hidden="true">
+                        <path
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd" fill-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </header>
+                  <!-- Modal body -->
+                  <div class="mt-4 mb-6">
+                    <!-- Modal title -->
+                    <p class="card-mini mb-2 text-lg font-semibold text-gray-700 dark:text-gray-300">
+                      Adicionar uma nova data
+                    </p>
+                    <!-- Modal description -->
+                    <p class="card-mini text-sm text-gray-700 dark:text-gray-400">
+                      As datas devem ser adicionadas corretamente para,
+                      evitar futuros problemas então antes de Adicionar verifique os campos
+                    </p>
+                  </div>
+
+                  <form id="alunoForm">
+
+                    <div class="form-group">
+                      <label class="block mt-4 text-sm">
+                        <span class="text-gray-700 dark:text-gray-400">Tipo de agendamento</span>
+                        <select id="type" name="type"
+                          class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
+                          <option value="">Selecione o tipo de agendamento</option>
+                          <option value="Aula teorica">Aula teorica</option>
+                          <option value="Aula pratica">Aula pratica</option>
+                          <option value="Reposição de aula pratica">Reposição de aula pratica</option>
+                          <option value="Reposição de aula teorica">Reposição de aula teorica</option>
+                          <option value="Não Definir">Não Definir</option>
+                        </select>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="block mt-4 text-sm">
+                        <span class="card-mini text-gray-700 dark:text-gray-400">Data</span>
+                        <input class="block w-full mt-1 text-sm form-input" placeholder="Digite a data do agendamento"
+                          type="text" id="dataagendamento" name="data" maxlength="10"
+                          oninput="formatarDataNascimento(this)" />
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="block mt-4 text-sm">
+                        <span class="card-mini text-gray-700 dark:text-gray-400">Hora</span>
+                        <input class="block w-full mt-1 text-sm form-input" type="text" id="horaInput" name="hora"
+                          placeholder="Digite a hora do agendamento" maxlength="5" oninput="formatarHorario(this)" />
+                      </label>
+                    </div>
+
+                    <div>
+                      <footer
+                        class="flex flex-col items-center justify-end px-6 py-3 -mx-6 -mb-4 space-y-4 sm:space-y-0 sm:space-x-6 sm:flex-row ">
+                        <button type="submit" id="submitButton"
+                          class="w-full text-white duration-150 bg-purple-600 border border-transparent rounded-lg sm:w-auto sm:px-4 sm:py-2 active:bg-purple-600 hover:bg-purple-700">
+                          Adicionar
+                        </button>
+                      </footer>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+              <!-- End of modal backdrop -->
+            </div>
+
+
+
+            <div id="modaldelet" style="display: none;">
+
+
+              <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
+                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                class="fixed inset-0 z-30 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center">
+                <!-- Modal -->
+                <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
+                  x-transition:enter-start="opacity-0 transform translate-y-1/2" x-transition:enter-end="opacity-100"
+                  x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                  x-transition:leave-end="opacity-0  transform translate-y-1/2" @click.away="closeModal"
+                  @keydown.escape="closeModal"
+                  class="w-full px-6 py-4 overflow-hidden bg-white rounded-t-lg dark:bg-gray-800 sm:rounded-lg sm:m-4 sm:max-w-xl card-mini"
+                  role="dialog" id="modal">
+                  <!-- Remove header if you don't want a close icon. Use modal body to place modal tile. -->
+                  <header class="flex justify-end">
+                    <button
+                      class="inline-flex items-center justify-center w-6 h-6 text-gray-400 transition-colors duration-150 rounded dark:hover:text-gray-200 hover: hover:text-gray-700"
+                      aria-label="close" onclick="closeModalDelet()" @click="closeModalNovoAluno">
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" role="img" aria-hidden="true">
+                        <path
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd" fill-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </header>
+
+                  <!-- Modal body -->
+                  <div class="mt-4 mb-6">
+                    <!-- Modal title -->
+                    <p class="mb-2 text-lg font-semibold text-gray-700 dark:text-gray-300 card-mini">
+                      Lista de datas
+                    </p>
+                    <!-- Modal description -->
+                    <p class="text-sm text-gray-700 dark:text-gray-400 card-mini">
+                      Aqui você pode editar as datas, você pode excluir
+                      as datas disponiveis na lista.
+                    </p>
+
+                  </div>
+
+                  <div id="datesList"></div>
+
+                  <div class="menudelet">
+                    <button id="paginaAnterior" onclick="paginaAnterior()">
+                      <i class='bx bx-chevrons-left' style='color:#ffffff'></i>
+                    </button>
+                    <p id="totalPaginas"></p>
+                    <button id="proximaPagina" onclick="proximaPagina()">
+                      <i class='bx bx-chevrons-right' style='color:#ffffff'></i>
+                    </button>
+                  </div>
+
+
+                </div>
+              </div>
+              <!-- End of modal backdrop -->
+            </div>
+
+
+            <form id="agendamentoForm">
+              <div id="cardsContainer" class="grid-container"></div>
+            </form>
+
+          </div>
+
+
+
+      </div>
+
+      <!-- Seleção de fotos -->
+      <div class="home-div-alunos">
+
+        <main class="h-full pb-16 overflow-y-auto">
+          <div>
+            <h2 class="my-6 text-2xl font-semibold">
+              Galeria de seleção de fotos
+            </h2>
+            <!-- CTA -->
+            <a class="flex items-center justify-between p-4 mb-8 text-sm font-semibold card-mini rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+              href="#">
+              <div class="flex items-center">
+                <svg id="Camada_3" data-name="Camada 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.85 340.47"
+                  style="width: 25px; height: 15px; margin-right: 16px;">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #ffc60b;
+                      }
+                    </style>
+                  </defs>
+                  <polygon class="cls-1"
+                    points="158.98 263.55 158.38 263.55 158.52 263.29 44.15 262.88 0 338.23 116.87 338.83 158.98 263.55" />
+                  <path class="cls-1"
+                    d="M458.38,112l-239.13-3.13L120,278.34H234l48.08-83,146.12,2.24c47.34,1.57,106.49,36.21,106.67,85.05h0c.19,49.43-45.72,89.63-102.54,89.77H304.37l-41.08,75.93,193.28,1c94.93-.26,171.65-76.05,171.34-169.25h0C627.59,188.05,552.15,113.24,458.38,112Z"
+                    transform="translate(-21.05 -108.88)" />
+                </svg>
+                <span>Aqui sera possivel adicionar e gerenciar as galerias e fotos do seus clientes!</span>
+              </div>
+
+            </a>
+
+            <div class="btns">
+
+              <div class="div-lixeira " onclick="openModalNovoAluno()">
+                <i class="bx bxs-user" style="color: #ffffff; width: 35px; height: 35px;"></i>
+                <span class="textBtn">Cadastrar</span>
+              </div>
+
+            </div>
+
+          </div>
+        </main>
+
+      </div>
+
+
+
+
+      <!-- Site Geral -->
+      <div class="home-div-geral">
+
+        <main class="h-full pb-16 overflow-y-auto">
+          <div>
+            <h2 class="my-6 text-2xl font-semibold">
+              Meu Site
+            </h2>
+            <!-- CTA -->
+            <a class="flex items-center justify-between p-4 mb-8 text-sm font-semibold card-mini rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+              href="#">
+              <div class="flex items-center">
+                <svg id="Camada_3" data-name="Camada 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.85 340.47"
+                  style="width: 25px; height: 15px; margin-right: 16px;">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #ffc60b;
+                      }
+                    </style>
+                  </defs>
+                  <polygon class="cls-1"
+                    points="158.98 263.55 158.38 263.55 158.52 263.29 44.15 262.88 0 338.23 116.87 338.83 158.98 263.55" />
+                  <path class="cls-1"
+                    d="M458.38,112l-239.13-3.13L120,278.34H234l48.08-83,146.12,2.24c47.34,1.57,106.49,36.21,106.67,85.05h0c.19,49.43-45.72,89.63-102.54,89.77H304.37l-41.08,75.93,193.28,1c94.93-.26,171.65-76.05,171.34-169.25h0C627.59,188.05,552.15,113.24,458.38,112Z"
+                    transform="translate(-21.05 -108.88)" />
+                </svg>
+                <span>Configure e personalize seu website com facilidade.!</span>
+              </div>
+
+            </a>
+
+            <div class="submenu" role="tablist">
+              <button class="submenu-btn active" data-subscreen="configuracoes-gerais" role="tab" aria-selected="true"
+                aria-controls="configuracoes-gerais">Configurações Gerais</button>
+              <button class="submenu-btn" data-subscreen="galeriasite" role="tab" aria-selected="false"
+                aria-controls="galeriasite">Galeria do Site</button>
+              <button class="submenu-btn" data-subscreen="servicos" role="tab" aria-selected="false"
+                aria-controls="servicos">Serviços</button>
+              <button class="submenu-btn" data-subscreen="duvidas" role="tab" aria-selected="false"
+                aria-controls="duvidas">Dúvidas</button>
+              <button class="submenu-btn" data-subscreen="personalizar" role="tab" aria-selected="false"
+                aria-controls="personalizar">Personalizar</button>
+            </div>
+            <div id="configuracoes-gerais" class="subscreen active" role="tabpanel"
+              aria-labelledby="configuracoes-gerais-tab">
+              <div class="section">
+                <h2><ion-icon name="home-outline"></ion-icon> Seção Principal (Hero)</h2>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="hero-title">Título Principal *</label>
+                    <input type="text" id="hero-title" placeholder="Ex: Vilma Silva" maxlength="50" required
+                      aria-required="true">
+                  </div>
+                  <div class="form-group">
+                    <label for="hero-subtitle">Subtítulo</label>
+                    <input type="text" id="hero-subtitle" placeholder="Ex: Fotógrafa de Comida" maxlength="100">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="hero-image-upload">Imagem Principal</label>
+                  <div class="image-upload-area" id="hero-image-upload">
+                    <p><ion-icon name="image-outline"></ion-icon> Clique ou arraste uma imagem aqui</p>
+                    <small>Formatos aceitos: JPG, PNG, WebP (máx. 5MB)</small>
+                    <input type="file" accept="image/*" style="display: none;" id="hero-image-input"
+                      aria-label="Upload de imagem principal">
+                    <div class="upload-progress">
+                      <div class="upload-progress-bar"></div>
+                    </div>
+                  </div>
+                  <img id="hero-image-preview" class="image-preview" style="display: none;"
+                    alt="Pré-visualização da imagem principal">
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="hero-button-text">Texto do Botão</label>
+                    <input type="text" id="hero-button-text" placeholder="Ex: Orçamentos" maxlength="30">
+                  </div>
+                  <div class="form-group">
+                    <label for="hero-whatsapp">WhatsApp (com código do país)</label>
+                    <input type="tel" id="hero-whatsapp" placeholder="5581998370180" pattern="[0-9]{10,15}"
+                      title="Digite um número de telefone válido com código do país">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="hero-message">Mensagem WhatsApp</label>
+                  <textarea id="hero-message" placeholder="Olá, gostaria de solicitar um orçamento..."
+                    maxlength="200"></textarea>
+                </div>
+              </div>
+            </div>
+            <div id="galeriasite" class="subscreen" role="tabpanel" aria-labelledby="galeriasite-tab">
+              <div class="section">
+                <h2><ion-icon name="image-outline"></ion-icon> Banner da Galeria</h2>
+                <div class="form-group">
+                  <label for="banner-text-enable">
+                    <input type="checkbox" id="banner-text-enable" checked>
+                    Exibir Título e Subtítulo
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label for="banner-title-cardapio">Título do Cardápio</label>
+                  <input type="text" id="banner-title-cardapio" maxlength="50" placeholder="Ex: Cardápio">
+                </div>
+                <div id="banner-text-fields">
+                  <div class="form-group">
+                    <label for="banner-title">Título do Banner</label>
+                    <input type="text" id="banner-title" maxlength="50" placeholder="Ex: Meu Portifólio">
+                  </div>
+                  <div class="form-group">
+                    <label for="banner-subtitle">Subtítulo do Banner</label>
+                    <input type="text" id="banner-subtitle" maxlength="100" placeholder="Ex: Em Forma de menu">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="banner-image-upload">Imagem do Banner</label>
+                  <div class="image-upload-area" id="banner-image-upload">
+                    <p><ion-icon name="image-outline"></ion-icon> Clique ou arraste uma imagem aqui</p>
+                    <small>Formatos aceitos: JPG, PNG, WebP (máx. 5MB)</small>
+                    <input type="file" accept="image/*" style="display: none;" id="banner-image-input"
+                      aria-label="Upload de imagem do banner">
+                    <div class="upload-progress">
+                      <div class="upload-progress-bar"></div>
+                    </div>
+                  </div>
+                  <img id="banner-image-preview" class="image-preview" style="display: none;"
+                    alt="Pré-visualização da imagem do banner">
+                </div>
+              </div>
+              <div class="section">
+                <h2><ion-icon name="folder-outline"></ion-icon> Categorias</h2>
+                <div style="margin-bottom: 20px;">
+                  <button class="btn" id="add-category-btn" aria-label="Adicionar nova categoria">
+                    <ion-icon name="add-circle-outline"></ion-icon> Adicionar Nova Categoria
+                  </button>
+                </div>
+                <div id="categories-container" aria-live="polite">
+                  <div class="empty-state" id="empty-categories" style="display: none;">
+                    <ion-icon name="folder-open-outline" style="font-size: 4rem; margin-bottom: 15px;"></ion-icon>
+                    <h3>Nenhuma categoria criada</h3>
+                    <p>Clique no botão acima para adicionar sua primeira categoria</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="servicos" class="subscreen" role="tabpanel" aria-labelledby="servicos-tab">
+              <div class="section">
+                <h2><ion-icon name="briefcase-outline"></ion-icon> Serviços</h2>
+                <div style="margin-bottom: 20px;">
+                  <button class="btn" id="add-service-btn" aria-label="Adicionar novo serviço">
+                    <ion-icon name="add-circle-outline"></ion-icon> Adicionar Novo Serviço
+                  </button>
+                </div>
+                <div id="services-container" aria-live="polite">
+                  <div class="empty-state" id="empty-services" style="display: none;">
+                    <ion-icon name="briefcase-outline" style="font-size: 4rem; margin-bottom: 15px;"></ion-icon>
+                    <h3>Nenhum serviço criado</h3>
+                    <p>Clique no botão acima para adicionar seu primeiro serviço</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="duvidas" class="subscreen" role="tabpanel" aria-labelledby="duvidas-tab">
+              <div class="section">
+                <h2><ion-icon name="help-circle-outline"></ion-icon> Dúvidas Frequentes</h2>
+                <div style="margin-bottom: 20px;">
+                  <button class="btn" id="add-faq-btn" aria-label="Adicionar nova dúvida">
+                    <ion-icon name="add-circle-outline"></ion-icon> Adicionar Nova Dúvida
+                  </button>
+                </div>
+                <div id="faqs-container" aria-live="polite">
+                  <div class="empty-state" id="empty-faqs" style="display: none;">
+                    <ion-icon name="help-circle-outline" style="font-size: 4rem; margin-bottom: 15px;"></ion-icon>
+                    <h3>Nenhuma dúvida criada</h3>
+                    <p>Clique no botão acima para adicionar sua primeira dúvida</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="personalizar" class="subscreen" role="tabpanel" aria-labelledby="personalizar-tab">
+              <div class="section">
+                <h2><ion-icon name="color-palette-outline"></ion-icon> Personalizar Tema</h2>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="theme-primary-color">Cor Primária</label>
+                    <input type="color" id="theme-primary-color" value="#000000">
+                  </div>
+                  <div class="form-group">
+                    <label for="theme-secondary-color">Cor Secundária</label>
+                    <input type="color" id="theme-secondary-color" value="#ffffff">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="theme-font">Fonte Principal</label>
+                  <select id="theme-font">
+                    <option value="Arial">Arial</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Roboto">Roboto</option>
+                  </select>
+                </div>
+              </div>
+              <div class="section">
+                <h2><ion-icon name="settings-outline"></ion-icon> Configurações de Funcionalidades</h2>
+                <div class="form-group">
+                  <label>
+                    <input type="checkbox" id="enable-services" checked> Habilitar Aba de Serviços
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="checkbox" id="enable-faqs" checked> Habilitar Aba de Dúvidas
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="checkbox" id="enable-splash" checked> Habilitar Tela de Splash
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="section">
+              <h2><ion-icon name="flash-outline"></ion-icon> Ações</h2>
+              <div class="actions-grid">
+                <button class="btn" id="save-btn" aria-label="Salvar alterações">
+                  <span class="btn-text"><ion-icon name="save-outline"></ion-icon> Salvar Alterações</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </main>
+
+      </div>
+
+      <!-- Sistema modular -->
+      <div class="home-div-modular">
+
+        <main class="h-full pb-16 overflow-y-auto">
+          <div>
+            <h2 class="my-6 text-2xl font-semibold">
+              Galeria de seleção de fotos
+            </h2>
+            <!-- CTA -->
+            <a class="flex items-center justify-between p-4 mb-8 text-sm font-semibold card-mini rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+              href="#">
+              <div class="flex items-center">
+                <svg id="Camada_3" data-name="Camada 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.85 340.47"
+                  style="width: 25px; height: 15px; margin-right: 16px;">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #ffc60b;
+                      }
+                    </style>
+                  </defs>
+                  <polygon class="cls-1"
+                    points="158.98 263.55 158.38 263.55 158.52 263.29 44.15 262.88 0 338.23 116.87 338.83 158.98 263.55" />
+                  <path class="cls-1"
+                    d="M458.38,112l-239.13-3.13L120,278.34H234l48.08-83,146.12,2.24c47.34,1.57,106.49,36.21,106.67,85.05h0c.19,49.43-45.72,89.63-102.54,89.77H304.37l-41.08,75.93,193.28,1c94.93-.26,171.65-76.05,171.34-169.25h0C627.59,188.05,552.15,113.24,458.38,112Z"
+                    transform="translate(-21.05 -108.88)" />
+                </svg>
+                <span>Aqui sera possivel adicionar e gerenciar as galerias e fotos do seus clientes!</span>
+              </div>
+
+            </a>
+
+
+
+          </div>
+        </main>
+
+      </div>
+
+  </section>
+
+
+  <!-- ====== Firebase SDK ====== -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
+  <!-- Adicione as referências para as bibliotecas do Firebase -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <!-- ====== Scripts ====== -->
+  <script src="firebaseConfig.js"></script>
+  <script type="module" src="script.js"></script>
+  <script src="home.js"></script>
+  <script src="menu.js"></script>
+  <script src="actions.js"></script>
+  <script src="info-users.js"></script>
+  <script src="suggestions.js"></script>
+  <script src="mascara.js"></script>
+  <script src="agendamentos.js"></script>
+  <script src="./js/novo-aluno.js"></script>
+  <script src="./js/cadatros.js"></script>
+</body>
+
+</html>
